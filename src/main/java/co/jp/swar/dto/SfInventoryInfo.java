@@ -3,19 +3,19 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfInventoryInfo {
-	
+
 	/** */
 	@JsonProperty("item_master_type")
 	private Integer itemMasterType;
-	
+
 	/** */
 	@JsonProperty("item_quantity")
 	private Integer itemQuantity;
-	
+
 	/** */
 	@JsonProperty("item_master_id")
 	private Integer itemMasterId;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;

@@ -3,7 +3,7 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfSlotNumber {
-	
+
 	/** */
 	@JsonProperty("number")
 	private Integer number;

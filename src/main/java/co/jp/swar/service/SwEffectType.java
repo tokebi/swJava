@@ -3,28 +3,31 @@ package co.jp.swar.service;
 import java.util.HashMap;
 
 public class SwEffectType {
-	private static HashMap<Integer,String> effectType = new HashMap<Integer, String>() {
-		private static final long serialVersionUID = -3662534994596617101L;
-		{put(0 , "");}
-		{put(1 , "‘Ì");}
-		{put(2 , "‘Ì%");}
-		{put(3 , "U");}
-		{put(4 , "U%");}
-		{put(5 , "–h");}
-		{put(6 , "–h%");}
-		{put(8 , "‘¬");}
-		{put(9 , "ƒNƒŠ");}
-		{put(10, "ƒ_ƒ");}
-		{put(11, "’ïR");}
-		{put(12, "“I’†");}
-    };
-    /**
-     * Œø‰Ê–¼‚Ì“ú–{Œê–¼‚ğ•Ô‚·
-     * 
-     * @param idx
-     * @return Œø‰Ê–¼‚Ì“ú–{Œê–¼
-     */
+	/**
+	 * åŠ¹æœåã®æ—¥æœ¬èªåã‚’è¿”ã™
+	 * 
+	 * @param idx
+	 * @return åŠ¹æœåã®æ—¥æœ¬èªå
+	 */
 	public String getJname(int idx) {
 		return effectType.get(idx);
 	}
+
+	private static HashMap<Integer, String> effectType = new HashMap<Integer, String>() {
+		private static final long serialVersionUID = -3662534994596617101L;
+		//@formatter:off
+		{put(0, "");}
+		{put(1, "ä½“");}
+		{put(2, "ä½“%");}
+		{put(3, "æ”»");}
+		{put(4, "æ”»%");}
+		{put(5, "é˜²");}
+		{put(6, "é˜²%");}
+		{put(8, "é€Ÿ");}
+		{put(9, "ã‚¯ãƒª");}
+		{put(10, "ãƒ€ãƒ¡");}
+		{put(11, "æŠµæŠ—");}
+		{put(12, "çš„ä¸­");}
+		//@formatter:on
+	};
 }

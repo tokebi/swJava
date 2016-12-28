@@ -6,39 +6,39 @@ public class SfBuildingList {
 	/** */
 	@JsonProperty("pos_x")
 	private Integer posX;
-	
+
 	/** */
 	@JsonProperty("pos_y")
 	private Integer posY;
-	
+
 	/** */
 	@JsonProperty("next_harvest")
 	private Integer nextHarvest;
-	
+
 	/** */
 	@JsonProperty("harvest_max")
 	private Integer harvestMax;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("gain_per_hour")
 	private Integer gainPerHour;
-	
+
 	/** */
 	@JsonProperty("island_id")
 	private Integer islandId;
-	
+
 	/** */
 	@JsonProperty("building_master_id")
 	private Integer buildingMasterId;
-	
+
 	/** */
 	@JsonProperty("harvest_available")
 	private Integer harvestAvailable;
-	
+
 	/** */
 	@JsonProperty("building_id")
 	private Integer buildingId;

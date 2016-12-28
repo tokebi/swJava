@@ -7,116 +7,116 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfWizardInfo {
-	
+
 	/** */
 	@JsonProperty("arena_energy_next_gain")
 	private Integer arenaEnergyNextGain;
-	
+
 	/** */
 	@JsonProperty("wizard_level")
 	private Integer wizardLevel;
-	
+
 	/** */
 	@JsonProperty("darkportal_energy")
 	private Integer darkportalEnergy;
-	
+
 	/** */
 	@JsonProperty("unit_depository_slots")
 	private SfSlotNumber unitDepositorySlots;
-	
+
 	/** */
 	@JsonProperty("energy_per_min")
 	private BigDecimal energyPerMin;
-	
+
 	/** */
 	@JsonProperty("costume_point")
 	private Integer costumePoint;
-	
+
 	/** */
 	@JsonProperty("social_point_max")
 	private Integer socialPointMax;
-	
+
 	/** */
 	@JsonProperty("next_energy_gain")
 	private Integer nextEnergyGain;
-	
+
 	/** */
 	@JsonProperty("unit_slots")
 	private SfSlotNumber unitSlots;
-	
+
 	/** */
 	@JsonProperty("wizard_energy")
 	private Integer wizardEnergy;
-	
+
 	/** */
 	@JsonProperty("wizard_last_login")
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Tokyo")
 	private Date wizardLastLogin;
-	
+
 	/** */
 	@JsonProperty("mail_box_event")
 	private Integer mailBoxEvent;
-	
+
 	/** */
 	@JsonProperty("arena_energy")
 	private Integer arenaEnergy;
-	
+
 	/** */
 	@JsonProperty("social_point_current")
 	private Integer socialPointCurrent;
-	
+
 	/** */
 	@JsonProperty("arena_energy_max")
 	private Integer arenaEnergyMax;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("honor_point")
 	private Integer honorPoint;
-	
+
 	/** */
 	@JsonProperty("wizard_name")
 	private String wizardName;
-	
+
 	/** */
 	@JsonProperty("darkportal_energy_max")
 	private Integer darkportalEnergyMax;
-	
+
 	/** */
 	@JsonProperty("rep_assigned")
 	private Integer repAssigned;
-	
+
 	/** */
 	@JsonProperty("rep_unit_id")
 	private Integer repUnitId;
-	
+
 	/** */
 	@JsonProperty("wizard_mana")
 	private Integer wizardMana;
-	
+
 	/** */
 	@JsonProperty("pvp_event")
 	private Integer pvpEvent;
-	
+
 	/** */
 	@JsonProperty("energy_max")
 	private Integer energyMax;
-	
+
 	/** */
 	@JsonProperty("experience")
 	private Integer experience;
-	
+
 	/** */
 	@JsonProperty("wizard_crystal")
 	private Integer wizardCrystal;
-	
+
 	/** */
 	@JsonProperty("guild_point")
 	private Integer guildPoint;
-	
+
 	/** */
 	@JsonProperty("costume_point_max")
 	private Integer costumePointMax;

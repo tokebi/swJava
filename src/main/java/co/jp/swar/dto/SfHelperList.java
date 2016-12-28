@@ -3,55 +3,55 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfHelperList {
-	
+
 	/** */
 	@JsonProperty("rep_unit_level")
 	private Integer repUnitLevel;
-	
+
 	/** */
 	@JsonProperty("last_login_time")
 	private Integer lastLoginTime;
-	
+
 	/** */
 	@JsonProperty("wizard_level")
 	private Integer wizardLevel;
-	
+
 	/** */
 	@JsonProperty("rating_id")
 	private Integer ratingId;
-	
+
 	/** */
 	@JsonProperty("rep_unit_master_id")
 	private Integer repUnitMasterId;
-	
+
 	/** */
 	@JsonProperty("arena_score")
 	private Integer arenaScore;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("next_assist_time")
 	private Integer nextAssistTime;
-	
+
 	/** */
 	@JsonProperty("wizard_name")
 	private String wizardName;
-	
+
 	/** */
 	@JsonProperty("rep_unit_class")
 	private Integer repUnitClass;
-	
+
 	/** */
 	@JsonProperty("channel_uid")
 	private Long channelUid;
-	
+
 	/** */
 	@JsonProperty("next_gift_time")
 	private Integer nextGiftTime;
-	
+
 	/** */
 	@JsonProperty("rep_unit_id")
 	private Integer repUnitId;

@@ -4,123 +4,124 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfUnit {
-	/** ƒ‚ƒ“ƒXƒ^[‚ÌˆêˆÓID */
+	/** ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®ä¸€æ„ID */
 	@JsonProperty("unit_id")
 	private Integer unitId;
-	
-	/** ƒ}ƒXƒ^[ID */
+
+	/** ãƒã‚¹ã‚¿ãƒ¼ID */
 	@JsonProperty("unit_master_id")
 	private Integer unitMasterId;
-	
-	/** ‘®« */
+
+	/** å±æ€§ */
 	@JsonProperty("attribute")
 	private Integer attribute;
-	
-	/** ƒ‚ƒ“ƒXƒ^[¢Š«“ú */
+
+	/** ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼å¬å–šæ—¥ */
 	@JsonProperty("create_time")
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Tokyo")
 	private String createTime;
-	
-	/** ƒŒƒxƒ‹ */
+
+	/** ãƒ¬ãƒ™ãƒ« */
 	@JsonProperty("unit_level")
 	private Integer unitLevel;
-	
-	/** ¯” */
+
+	/** æ˜Ÿæ•° */
 	@JsonProperty("class")
 	private Integer classNum;
-	
-	/** Šî‘b‘Ì—Í */
+
+	/** åŸºç¤ä½“åŠ› */
 	@JsonProperty("con")
 	private Integer con;
 
-	/** UŒ‚—Í */
+	/** æ”»æ’ƒåŠ› */
 	@JsonProperty("atk")
 	private Integer atk;
-	
-	/** –hŒä—Í */
+
+	/** é˜²å¾¡åŠ› */
 	@JsonProperty("def")
 	private Integer def;
-	
-	/** UŒ‚‘¬“x */
+
+	/** æ”»æ’ƒé€Ÿåº¦ */
 	@JsonProperty("spd")
 	private Integer spd;
-	
-	/** ƒNƒŠ—¦ */
+
+	/** ã‚¯ãƒªç‡ */
 	@JsonProperty("critical_rate")
 	private Integer criticalRate;
-	
-	/** ƒNƒŠƒ_ƒ*/
+
+	/** ã‚¯ãƒªãƒ€ãƒ¡ */
 	@JsonProperty("critical_damage")
 	private Integer criticalDamage;
-	
-	/** Œø‰Ê’ïR */
+
+	/** åŠ¹æœæŠµæŠ— */
 	@JsonProperty("resist")
 	private Integer resist;
-	
-	/** Œø‰Ê“I’† */
+
+	/** åŠ¹æœçš„ä¸­ */
 	@JsonProperty("accuracy")
 	private Integer accuracy;
-	
-	/** ‘•’…ƒ‹[ƒ“ */
+
+	/** è£…ç€ãƒ«ãƒ¼ãƒ³ */
 	@JsonProperty("runes")
 	private SfRune[] lstRune;
-	
-	/** ƒXƒLƒ‹ */
+
+	/** ã‚¹ã‚­ãƒ« */
 	@JsonProperty("skills")
 	private Integer[][] lstskill;
-	
-	/** ƒzƒ€ƒ“ƒNƒ‹ƒX */
+
+	/** ãƒ›ãƒ ãƒ³ã‚¯ãƒ«ã‚¹ */
 	@JsonProperty("homunculus")
 	private Integer homunculus;
-	
-	/** ƒzƒ€ƒ“ƒNƒ‹ƒX–¼ */
+
+	/** ãƒ›ãƒ ãƒ³ã‚¯ãƒ«ã‚¹å */
 	@JsonProperty("homunculus_name")
-	private String homunculusName;	/** */
+	private String homunculusName;
+	/** */
 	@JsonProperty("source")
 	private Integer source;
-	
+
 	/** */
 	@JsonProperty("building_id")
 	private Integer buildingId;
-	
+
 	/** */
 	@JsonProperty("exp_gain_rate")
 	private Integer expGainRate;
-	
+
 	/** */
 	@JsonProperty("exp_gained")
 	private Integer expGained;
-	
+
 	/** */
 	@JsonProperty("trans_items")
 	private Integer[] lstTtransItem;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("pos_x")
 	private Integer posX;
-	
+
 	/** */
 	@JsonProperty("pos_y")
 	private Integer posY;
-	
+
 	/** */
 	@JsonProperty("costume_master_id")
 	private Integer costumeMasterId;
-	
+
 	/** */
 	@JsonProperty("experience")
 	private Integer experience;
-	
+
 	/** */
 	@JsonProperty("island_id")
 	private Integer islandId;
 
 	/**
-	 * ƒ‚ƒ“ƒXƒ^[‚ÌˆêˆÓID‚ğ•Ô‚·
+	 * ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®ä¸€æ„IDã‚’è¿”ã™
 	 * 
 	 * @return unitId
 	 */
@@ -129,7 +130,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒ}ƒXƒ^[ID‚ğ•Ô‚·
+	 * ãƒã‚¹ã‚¿ãƒ¼IDã‚’è¿”ã™
 	 * 
 	 * @return unitMasterId
 	 */
@@ -138,7 +139,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ‘®«‚ğ•Ô‚·
+	 * å±æ€§ã‚’è¿”ã™
 	 * 
 	 * @return attribute
 	 */
@@ -147,7 +148,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ¢Š«“ú‚ğ•Ô‚·
+	 * å¬å–šæ—¥ã‚’è¿”ã™
 	 * 
 	 * @return createTime
 	 */
@@ -156,7 +157,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒŒƒxƒ‹‚ğ•Ô‚·
+	 * ãƒ¬ãƒ™ãƒ«ã‚’è¿”ã™
 	 * 
 	 * @return unitLevel
 	 */
@@ -165,7 +166,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ¯”‚ğ•Ô‚·
+	 * æ˜Ÿæ•°ã‚’è¿”ã™
 	 * 
 	 * @return classNum
 	 */
@@ -174,7 +175,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ‘Ì—Í‚ğ•Ô‚·
+	 * ä½“åŠ›ã‚’è¿”ã™
 	 * 
 	 * @return con
 	 */
@@ -183,7 +184,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * UŒ‚—Í‚ğ•Ô‚·
+	 * æ”»æ’ƒåŠ›ã‚’è¿”ã™
 	 * 
 	 * @return atk
 	 */
@@ -192,7 +193,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * –hŒä—Í‚ğ•Ô‚·
+	 * é˜²å¾¡åŠ›ã‚’è¿”ã™
 	 * 
 	 * @return def
 	 */
@@ -201,7 +202,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * UŒ‚—Í‚ğ•Ô‚·
+	 * æ”»æ’ƒåŠ›ã‚’è¿”ã™
 	 * 
 	 * @return spd
 	 */
@@ -210,7 +211,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒNƒŠ—¦‚ğ•Ô‚·
+	 * ã‚¯ãƒªç‡ã‚’è¿”ã™
 	 * 
 	 * @return criticalRate
 	 */
@@ -219,7 +220,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒNƒŠƒ_ƒ‚ğ•Ô‚·
+	 * ã‚¯ãƒªãƒ€ãƒ¡ã‚’è¿”ã™
 	 * 
 	 * @return criticalDamage
 	 */
@@ -228,7 +229,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * Œø‰Ê’ïR‚ğ•Ô‚·
+	 * åŠ¹æœæŠµæŠ—ã‚’è¿”ã™
 	 * 
 	 * @return resist
 	 */
@@ -237,7 +238,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * Œø‰Ê“I’†‚ğ•Ô‚·
+	 * åŠ¹æœçš„ä¸­ã‚’è¿”ã™
 	 * 
 	 * @return accuracy
 	 */
@@ -246,7 +247,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒ‹[ƒ“‚ğ•Ô‚·
+	 * ãƒ«ãƒ¼ãƒ³ã‚’è¿”ã™
 	 * 
 	 * @return lstRune
 	 */
@@ -255,7 +256,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒXƒLƒ‹‚ğ•Ô‚·
+	 * ã‚¹ã‚­ãƒ«ã‚’è¿”ã™
 	 * 
 	 * @return lstskill
 	 */
@@ -272,7 +273,7 @@ public class SfUnit {
 	}
 
 	/**
-	 * ƒzƒ€ƒ“ƒNƒ‹ƒX–¼‚ğ•Ô‚·
+	 * ãƒ›ãƒ ãƒ³ã‚¯ãƒ«ã‚¹åã‚’è¿”ã™
 	 * 
 	 * @return homunculusName
 	 */

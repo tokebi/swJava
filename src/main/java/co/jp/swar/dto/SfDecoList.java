@@ -6,27 +6,27 @@ public class SfDecoList {
 	/** */
 	@JsonProperty("pos_x")
 	private Integer posX;
-	
+
 	/** */
 	@JsonProperty("pos_y")
 	private Integer posY;
-	
+
 	/** */
 	@JsonProperty("deco_id")
 	private Integer decoId;
-	
+
 	/** */
 	@JsonProperty("level")
 	private Integer level;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("island_id")
 	private Integer islandId;
-	
+
 	/** */
 	@JsonProperty("master_id")
 	private Integer masterId;

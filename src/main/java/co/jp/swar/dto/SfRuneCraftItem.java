@@ -3,23 +3,23 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfRuneCraftItem {
-	
+
 	/** */
 	@JsonProperty("sell_value")
 	private Integer sellValue;
-	
+
 	/** */
 	@JsonProperty("craft_type_id")
 	private Integer craftTypeId;
-	
+
 	/** */
 	@JsonProperty("craft_item_id")
 	private Integer craftItemId;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("craft_type")
 	private Integer craftType;

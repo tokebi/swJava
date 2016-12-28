@@ -3,39 +3,39 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SwarFarm {
-	
+
 	/** */
 	@JsonProperty("unit_list")
 	private SfUnit[] lstUnit;
-	
+
 	/** */
 	@JsonProperty("building_list")
 	private SfBuildingList[] lstBuilding;
-	
+
 	/** */
 	@JsonProperty("runes")
 	private SfRune[] lstRune;
-	
+
 	/** */
 	@JsonProperty("deco_list")
 	private SfDecoList[] lstDeco;
-	
+
 	/** */
 	@JsonProperty("helper_list")
 	private SfHelperList[] lstHelper;
-	
+
 	/** */
 	@JsonProperty("unit_lock_list")
 	private Integer[] lstUnitLock;
-	
+
 	/** */
 	@JsonProperty("wizard_info")
 	private SfWizardInfo wizardInfo;
-	
+
 	/** */
 	@JsonProperty("inventory_info")
 	private SfInventoryInfo[] lstInventoryInfo;
-	
+
 	/** */
 	@JsonProperty("rune_craft_item_list")
 	private SfRuneCraftItem[] lstRuneCraftItem;

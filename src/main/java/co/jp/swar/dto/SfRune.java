@@ -3,62 +3,62 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SfRune {
-	
+
 	/** */
 	@JsonProperty("occupied_type")
 	private Integer occupiedType;
-	
+
 	/** */
 	@JsonProperty("sell_value")
 	private Integer sellValue;
-	
+
 	/** */
 	@JsonProperty("pri_eff")
 	private Integer[] priEff;
-	
+
 	/** */
 	@JsonProperty("prefix_eff")
 	private Integer[] prefixEff;
-	
+
 	/** */
 	@JsonProperty("slot_no")
 	private Integer slotNo;
-	
+
 	/** */
 	@JsonProperty("rank")
 	private Integer rank;
-	
+
 	/** */
 	@JsonProperty("occupied_id")
 	private Integer occupiedId;
-	
+
 	/** */
 	@JsonProperty("sec_eff")
 	private Integer[][] secEff;
-	
+
 	/** */
 	@JsonProperty("wizard_id")
 	private Integer wizardId;
-	
+
 	/** */
 	@JsonProperty("upgrade_curr")
 	private Integer upgradeCurr;
-	
+
 	/** */
 	@JsonProperty("rune_id")
 	private Long runeId;
-	
+
 	/** */
 	@JsonProperty("base_value")
 	private Integer baseValue;
-	
+
 	@JsonProperty("class")
 	private Integer classNum;
-	
+
 	/** */
 	@JsonProperty("set_id")
 	private Integer setId;
-	
+
 	/** */
 	@JsonProperty("upgrade_limit")
 	private Integer upgradeLimit;
