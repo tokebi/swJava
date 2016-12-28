@@ -1,0 +1,11 @@
+Springアノテーション「@Component、@Service、@Repository、@Controller」について
+ http://qiita.com/KevinFQ/items/abc7369cb07eb4b9ae29
+ 
+ 動きとして基本的同じであり、何れもアノテーションが付与されたクラスを
+ SpringのDIコンテナにbeanとして登録します。
+ 使い分けとしては、Spring MVCにおいて
+ コントローラー層のクラスには@Contoroller、
+ サービス層のクラスには@Serivice、
+ データ層のクラスには@Repository、
+ どれにも当てはまらない場合は@Componentを付けます。
+ 
