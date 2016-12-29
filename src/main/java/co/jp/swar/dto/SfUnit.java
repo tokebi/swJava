@@ -3,14 +3,16 @@ package co.jp.swar.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import co.jp.swar.service.SwMonsterService;
+
 public class SfUnit {
 	/** モンスターの一意ID */
 	@JsonProperty("unit_id")
-	private Integer unitId;
+	private Integer id;
 
 	/** マスターID */
 	@JsonProperty("unit_master_id")
-	private Integer unitMasterId;
+	private Integer masterId;
 
 	/** 属性 */
 	@JsonProperty("attribute")
@@ -125,19 +127,37 @@ public class SfUnit {
 	 * 
 	 * @return unitId
 	 */
-	public Integer getUnitId() {
-		return unitId;
+	public Integer getId() {
+		return id;
 	}
 
 	/**
 	 * マスターIDを返す
 	 * 
-	 * @return unitMasterId
+	 * @return masterId
 	 */
-	public Integer getUnitMasterId() {
-		return unitMasterId;
+	public Integer getMasterId() {
+		return masterId;
 	}
 
+	/**
+	 * モンスター日本語名を返す
+	 * 
+	 * @return
+	 */
+	public String getJname() {
+		return SwMonsterService.getInstance().getJname(masterId);
+	}
+	
+	/**
+	 * モンスター覚醒名を返す
+	 * 
+	 * @return
+	 */
+	public String getKname() {
+		return SwMonsterService.getInstance().getKname(masterId);
+	}
+	
 	/**
 	 * 属性を返す
 	 * 
@@ -175,12 +195,12 @@ public class SfUnit {
 	}
 
 	/**
-	 * 体力を返す
+	 * HPを返す
 	 * 
-	 * @return con
+	 * @return hp
 	 */
-	public Integer getCon() {
-		return con;
+	public Integer getHp() {
+		return con*15;
 	}
 
 	/**

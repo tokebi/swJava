@@ -25,7 +25,6 @@ public class SwarFarmService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("インスタンスを作成しました。");
 	}
 
 	public static SwarFarmService getInstance() {

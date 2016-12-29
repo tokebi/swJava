@@ -5,15 +5,27 @@
 <html>
 <head>
 <title>SwarHome</title>
+<style type="text/css">
+div.blockb {
+	float: left;
+	width: 20%;
+}
+</style>
 </head>
 <body>
+	<div class="blocka">
+		とけびのサマナーズウォールーンツール<BR>
+		　<a href="monsterlist">モンスターリスト</a>
+	</div>
+	<div class="blockb">
+		<ul data-role="listview">
+			<c:forEach var="record" items="${list}">
+				<a href="."><c:out value="${record.getName()}" /></a><BR>
+			</c:forEach>
+		</ul>
+	</div>
+	<div class="blockc">コンテンツC</div>
 
-	<ul data-role="listview">
-		<li data-role="list-divider">テスト</li>
-		<c:forEach var="record" items="${list}">
-			<li><c:out value="${record.getName()}" /></li>
-		</c:forEach>
-	</ul>
 
 </body>
 </html>

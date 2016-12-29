@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import co.jp.swar.dto.SfUnit;
 import co.jp.swar.form.MonsterForm;
-import co.jp.swar.service.SwMonstersName;
 import co.jp.swar.service.SwarFarmService;
 
 @Controller
@@ -23,18 +22,19 @@ public class SwarTopController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String top(Locale locale, Model model) {
-
+		logger.debug("top start");
+		
 		// SwarFarmサービス取得
 		SwarFarmService swarFarm = SwarFarmService.getInstance();
 
-		System.out.println(swarFarm.getData().getLstUnit()[0].getAtk());
+		System.out.println(swarFarm.getLstUnit()[0].getAtk());
 		System.out.println(swarFarm.getData().getWizardInfo().getWizardLastLogin());
 
 		ArrayList<MonsterForm> result = new ArrayList<MonsterForm>();
-		for (SfUnit unit : swarFarm.getData().getLstUnit()) {
+		for (SfUnit unit : swarFarm.getLstUnit()) {
 			MonsterForm monster = new MonsterForm();
-			monster.setId(unit.getUnitId());
-			monster.setName(SwMonstersName.getJname(unit.getUnitMasterId()));
+			monster.setId(unit.getId());
+			monster.setName(unit.getJname());
 			result.add(monster);
 		}
 
@@ -42,7 +42,9 @@ public class SwarTopController {
 
 		String path = new File(".").getAbsoluteFile().getParent();
 		System.out.println(path);
-
+		
+		logger.debug("top ended");
+		
 		return "swtop";
 	}
 }
