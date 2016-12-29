@@ -20,7 +20,7 @@ div.blockb {
 	<div class="blockb">
 		<ul data-role="listview">
 			<c:forEach var="record" items="${list}">
-				<a href="."><c:out value="${record.getName()}" /></a><BR>
+				<a href="."><c:out value="${record.getJname()}" /></a><BR>
 			</c:forEach>
 		</ul>
 	</div>

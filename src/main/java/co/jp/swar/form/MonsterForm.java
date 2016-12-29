@@ -2,7 +2,7 @@ package co.jp.swar.form;
 
 public class MonsterForm {
 	private int id;
-	private String name;
+	private String jname;
 	private String kname;
 	private int hp;
 	private Integer atk;
@@ -22,8 +22,8 @@ public class MonsterForm {
 	/**
 	 * @return name
 	 */
-	public String getName() {
-		return name;
+	public String getJname() {
+		return jname;
 	}
 	/**
 	 * @return kname
@@ -40,8 +40,8 @@ public class MonsterForm {
 	/**
 	 * @param name セットする name
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setJname(String jname) {
+		this.jname = jname;
 	}
 	/**
 	 * @param kname セットする kname

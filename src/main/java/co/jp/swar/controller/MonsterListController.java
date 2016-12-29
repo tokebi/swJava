@@ -6,6 +6,7 @@ import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,17 +34,8 @@ public class MonsterListController {
 		ArrayList<MonsterForm> result = new ArrayList<MonsterForm>();
 		for (SfUnit unit : swarFarm.getLstUnit()) {
 			MonsterForm monster = new MonsterForm();
-			monster.setId(unit.getId());
-			monster.setName(unit.getJname());
-			monster.setKname(unit.getKname());
-			monster.setHp(unit.getHp());
-			monster.setAtk(unit.getAtk());
-			monster.setDef(unit.getDef());
-			monster.setSpd(unit.getSpd());
-			monster.setCriticalRate(unit.getCriticalRate());
-			monster.setCriticalDamage(unit.getCriticalDamage());
-			monster.setResist(unit.getResist());
-			monster.setAccuracy(unit.getAccuracy());
+			// モンスターユニットからフォームにコピー
+			BeanUtils.copyProperties(unit, monster);
 			result.add(monster);
 		}
 

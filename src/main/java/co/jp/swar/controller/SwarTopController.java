@@ -34,7 +34,7 @@ public class SwarTopController {
 		for (SfUnit unit : swarFarm.getLstUnit()) {
 			MonsterForm monster = new MonsterForm();
 			monster.setId(unit.getId());
-			monster.setName(unit.getJname());
+			monster.setJname(unit.getJname());
 			result.add(monster);
 		}
 

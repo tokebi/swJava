@@ -18,7 +18,7 @@ thead.scrollHead, tbody.scrollBody {
 
 tbody.scrollBody {
 	overflow-y: scroll;
-	height: 100px;
+	height: 2000px;
 }
 
 /*幅調整*/
@@ -26,7 +26,6 @@ td, th {
 	table-layout: fixed;
 }
 
-.no {		width: 50px;}
 .name {		width: 200px;}
 .kname {	width: 200px;}
 .hp {		width: 50px;}
@@ -47,9 +46,7 @@ td, th {
 		<table>
 			<thead class="scrollHead">
 				<tr>
-					<th class="no">番号</th>
 					<th class="name">名前</th>
-					<th class="kname">覚醒名</th>
 					<th class="hp">体力</th>
 					<th class="atk">攻撃力</th>
 					<th class="def">防御力</th>
@@ -63,9 +60,7 @@ td, th {
 			<tbody class="scrollBody">
 				<c:forEach var="record" items="${list}">
 					<tr>
-						<td class="no">1</td>
-						<td class="name">${record.getName()}</td>
-						<td class="kname">${record.getKname()}</td>
+						<td class="name">${record.getJname()}(${record.getKname()})</td>
 						<td class="hp">${record.getHp()}</td>
 						<td class="atk">${record.getAtk()}</td>
 						<td class="def">${record.getDef()}</td>
@@ -79,7 +74,5 @@ td, th {
 			</tbody>
 		</table>
 	</div>
-
-
 </body>
 </html>
